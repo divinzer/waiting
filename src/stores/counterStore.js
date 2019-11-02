@@ -15,4 +15,4 @@ decorate(CounterStore, {
   dec: action,
 })
 
-export default new CounterStore()
+export default CounterStore
