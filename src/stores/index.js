@@ -1,12 +1,12 @@
 import React from "react"
-import CounterStore from "./counterStore"
-import UserStore from "./UserStore"
-import BoardStore from "./BoardStore"
+import counterStore from "./counterStore"
+import userStore from "./userStore"
+import boardStore from "./boardStore"
 
 export const storesContext = React.createContext({
-  counterStore: new CounterStore(),
-  UserStore: new UserStore(),
-  BoardStore: new BoardStore(),
+  counterStore: new counterStore(),
+  userStore: new userStore(),
+  boardStore: new boardStore(),
 })
 
 export const useStores = () => React.useContext(storesContext)

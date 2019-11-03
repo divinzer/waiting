@@ -2,7 +2,7 @@ import { observable, action, decorate } from "mobx"
 import axios from "axios"
 // configure({ enforceActions: "always" })
 
-class BoardStore {
+class boardStore {
   list = []
   state = undefined
   getList = async () => {
@@ -20,10 +20,10 @@ class BoardStore {
     }
   }
 }
-decorate(BoardStore, {
+decorate(boardStore, {
   list: observable,
   state: observable,
   getList: action,
 })
 
-export default BoardStore
+export default boardStore

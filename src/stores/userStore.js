@@ -1,14 +1,14 @@
 import { observable, action, decorate } from "mobx"
 
-class UserStore {
+class userStore {
   currentUser = { name: "test" }
   getUser = () => {
     this.currentUser = { name: "aaaa" }
   }
 }
-decorate(UserStore, {
+decorate(userStore, {
   currentUser: observable,
   getUser: action,
 })
 
-export default UserStore
+export default userStore

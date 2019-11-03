@@ -1,6 +1,6 @@
 import { observable, action, decorate } from "mobx"
 
-class CounterStore {
+class counterStore {
   count = 1
   inc = () => {
     this.count += 1
@@ -9,10 +9,10 @@ class CounterStore {
     this.count -= 1
   }
 }
-decorate(CounterStore, {
+decorate(counterStore, {
   count: observable,
   inc: action,
   dec: action,
 })
 
-export default CounterStore
+export default counterStore
